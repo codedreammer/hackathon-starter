@@ -1,14 +1,22 @@
 import { DEFAULT_METADATA } from "@/constants";
 
-export const siteConfig = {
-  name: DEFAULT_METADATA.title,
-  description: DEFAULT_METADATA.description,
-  url: DEFAULT_METADATA.url,
-  ogImage: `${DEFAULT_METADATA.url}/og.png`,
-  links: {
-    github: "https://github.com",
-  },
-  author: "Hackathon Starter Team",
-};
 
-export type SiteConfig = typeof siteConfig;
+export const siteConfig = {
+  name: "Hackathon Starter",
+  description:
+    "A reusable Next.js starter kit for hackathons built with Next.js, TypeScript and Tailwind CSS.",
+  url: "http://localhost:3000",
+
+  ogImage: "/og-image.png",
+
+  creator: "Your Team",
+
+  keywords: [
+    "Next.js",
+    "Hackathon",
+    "Starter",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+  ],
+} as const;
